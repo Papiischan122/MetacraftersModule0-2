@@ -106,12 +106,39 @@ export default function HomePage() {
     <main className="container">
       <header><h1>Welcome Llanes ATM!</h1></header>
       {initUser()}
-      <style jsx>{`
+         <style jsx>{`
         .container {
-          text-align: center
+          text-align: center;
+          padding: 20px;
         }
-      `}
-      </style>
+        .wallet-container {
+          border: 1px solid #ccc;
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #f9f9f9;
+          text-align: center;
+          margin-top: 20px;
+          width: 300px;
+          position: relative;
+        }
+        .buttons-container {
+          margin-top: 20px;
+        }
+        .buttons-container button {
+          margin: 5px;
+        }
+        .error-message {
+          color: red;
+          position: absolute;
+          top: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #fff;
+          padding: 5px 10px;
+          border: 1px solid red;
+          border-radius: 5px;
+        }
+      `}</style>
     </main>
   )
 }
